@@ -1,0 +1,323 @@
+@import "normalize";
+
+@font-face {
+  font-family: 'Catamaran Medium';
+  font-display: swap;
+  src: url("Catamaran-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  font-display: swap;
+  src: url("Catamaran-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Catamaran Bold';
+  font-display: swap;
+  src: url("Catamaran-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Cardo';
+  font-display: swap;
+  src: url("Cardo-Regular.ttf");
+}
+
+a {
+  text-decoration: none;
+}
+
+$imperial-red: #E63946;
+$imperial-red-brighter: #FF2939;
+$background-grey: #F4F4F4;
+
+$mobile-width: 520px;
+$medium-width: 1000px;
+$large-width: 1200px;
+
+$max-content-width: 1200px;
+$max-page-width: 1800px;
+
+.page-width {
+  max-width: $max-page-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-width {
+  max-width: $max-content-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header-content {
+  display: flex;
+}
+
+.header-content > h1 {
+  font-size: 2.2em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Cardo', serif;
+  font-weight: lighter;
+}
+
+.header-content > nav {
+  display: inline-block;
+}
+
+.header-content > nav > a {
+  font-family: 'Catamaran Medium', sans-serif;
+  font-size: 1.2em;
+  color: black;
+  transition: all 0.2s;
+}
+
+
+.header-content > nav > a:hover {
+  text-decoration: underline;
+}
+
+.donate-button {
+  font-family: 'Catamaran Medium', sans-serif;
+  font-size: 1.2em;
+  color: white;
+  display: inline-block;
+  padding: 18px 36px;
+  background-color: $imperial-red;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.donate-button:hover {
+  background-color: $imperial-red-brighter;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.twobox {
+  display: flex;
+}
+
+.twobox-cell {
+  flex: 1;
+  overflow: hidden;
+}
+
+
+.greybox {
+  background-color: $background-grey;
+}
+
+.logobox {
+  display: flex;
+  justify-content: center;
+}
+
+.logocell {
+  display: flex;
+  justify-content: center;
+}
+
+
+.logocell > img {
+  height: 140px;
+  width: auto;
+}
+
+
+// Mobile screens only
+@media only screen and (max-width: $mobile-width) {
+  .twobox-image {
+    min-height: 250px;
+  }
+  .logobox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logocell {
+    margin: 20px;
+  }
+
+  .twobox-text-lower, .twobox-text-upper, .onebox-text {
+    padding: 40px 10px 30px 10px;
+  }
+
+  .header-content > nav {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+
+// Tablet screens only
+@media only screen and (min-width: $mobile-width + 1) and (max-width: $medium-width) {
+  .twobox-image {
+    min-height: 420px;
+  }
+  .twobox-text-lower, .twobox-text-upper {
+    padding: 70px 20px 60px 20px;
+  }
+
+  .header-content > nav {
+    padding: 10px;
+    display: flex;
+  }
+}
+
+// Mobile and tablet
+@media only screen and (max-width: $medium-width) {
+
+  .header-content {
+    padding: 20px;
+  }
+
+  .header-content > nav > a {
+    padding: 10px;
+  }
+
+  .twobox-upper {
+    flex-direction: column-reverse;
+  }
+
+  .twobox-lower {
+    flex-direction: column;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+// Small computer screens only
+@media only screen and (min-width: $medium-width + 1) and (max-width: $large-width) {
+  .twobox-image {
+    min-height: 400px;
+  }
+
+  .twobox-cell > .text-content > p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .twobox-cell > .text-content > h2 {
+    font-size: 2.2em;
+  }
+
+}
+
+// Big computer screens only
+@media only screen and (min-width: $large-width + 1) {
+  .twobox-image {
+    min-height: 450px;
+  }
+
+}
+
+// All computer screens
+@media only screen and (min-width: $medium-width + 1) {
+
+  .header-content > nav > a {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .header-content > nav {
+    margin-left: auto;
+    margin-right: 28px;
+  }
+
+  .twobox-text-lower, .twobox-text-upper {
+    max-width: 550px;
+  }
+
+  .twobox-text-lower {
+    margin: 5% 45px 5% auto;
+    padding-left: 20px;
+  }
+
+  .twobox-text-upper {
+    margin: 5% auto 5% 45px;
+    padding-right: 20px;
+  }
+
+  .header-content {
+    padding: 36px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// Computer and tablet screens
+@media only screen and (min-width: $mobile-width + 1) {
+  .logocell {
+    background-color: white;
+    width: 300px;
+    height: 190px;
+    margin: 28px 22px;
+    align-items: center;
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.02);
+  }
+
+  .logobox {
+    background-color: $background-grey;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .onebox-text {
+    padding: 70px 20px 60px 20px;
+  }
+
+}
+
+
+
+.text-content > h2 {
+  font-family: 'Cardo', serif;
+  font-weight: lighter;
+  font-size: 2.6em;
+  margin-bottom: 28px;
+  margin-top: 0px;
+}
+
+.contact > a {
+  color: black;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+}
+
+.text-content > p {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+.img-ian {
+  background-image: url(ian2.jpg);
+}
+
+.img-map {
+  background-image: url(map.jpg);
+}
+
+.twobox-image {
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  height: 60px;
+  background-color: $background-grey;
+}

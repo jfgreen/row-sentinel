@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Row Sentinel</title>
+{% endblock head %}
+
+{% block body %}
+      <header>
+        <div class="header-content content-width">
+          <h1>Row Sentinel</h1>
+          <nav>
+            <a href="#about-ian">About Ian</a>
+            <a href="#the-route">The Route</a>
+            <a href="#press">Press &#38; Sponsorship</a>
+          </nav>
+          <a class="donate-button" href="{{ config.extra.dontation_url }}">Donate now</a>
+        </div>
+      </header>
+      <main>
+        <div class="page-width">
+          <img class="hero-image" src="ian1.jpg" />
+        </div>
+
+        <section id="the-challenge">
+          <div class="content-width text-content onebox-text">
+            <h2>Solo North Atlantic crossing</h2>
+            <p>
+              In May 2021 Ian Rivers will embark on a solo unsupported row across
+              the North Atlantic from New York to the Scilly Isles. Using only a
+              sextant as the main form of navigation, this 3,100 nautical mile
+              crossing will test human endurance, navigation and seamanship to
+              the absolute limit. Nobody has yet completed an unsupported solo
+              from New York.
+            </p>
+            <p>
+
+            <p>
+              The row is designed to raise money for the Special Air Service Regimental
+              Association (SASRA) and St Michael’s Hospice in Hereford, whilst also raising
+              awareness of the mental health challenges facing serving and veteran personnel.
+              He has personally funded the £25,0000 purchase of the Rossiter Ocean 2 boat to
+              ensure the venture takes place.
+            </p>
+
+            <div class="logobox">
+              <div class="logocell">
+                <img src="stmichaels.jpg" />
+              </div>
+              <div class="logocell">
+                <img src="wingeddagger.png" />
+              </div>
+            </div>
+
+            <p>
+              The Boat will be named: ‘Sentinel’ after the SASRA mental health programme. Ian
+              is a SASRA Sentinel.
+              By facing this monumental challenge, Ian wants to raise in excess of £500,000
+              for his two chosen charities.
+            </p>
+          </div>
+        </section>
+
+        <section id="about-ian">
+          <div class="page-width twobox twobox-upper">
+            <div class="twobox-cell twobox-image img-ian"></div>
+            <div class="twobox-cell greybox">
+              <div class="text-content twobox-text-upper">
+                <h2>About Ian</h2>
+
+                <p>
+                Ian Rivers’ time in the Special Forces fuelled his passion for pure navigation.
+                He became a trained mountain guide and ocean yacht-master, traversing all the
+                major mountain ranges, deserts and oceans of the world.
+                </p>
+
+
+                <p>
+                Having left the military in 2011, his skills were truly tested in 2013 when he
+                was kidnapped in Syria. He successfully escaped, then navigated his way to
+                safety using only natural indicators.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="the-route">
+          <div class="page-width twobox twobox-lower">
+            <div class="twobox-cell greybox">
+              <div class="text-content twobox-text-lower">
+                <h2>The Route</h2>
+
+                <p>
+                The original North Atlantic or classic route is for purists. It goes back to
+                the first ever ocean crossings by Frank Samuelsen and George Harbo in 1896. In
+                modern times, Ridgeway and Blyth made the voyage in 1966 and the first solo
+                crossing was completed by Tom McClean in 1969.
+                </p>
+
+                <p>
+                What all these crossings have in common is the use of the sun and stars to
+                navigate, and boats designed to be rowed, not propelled by prevailing winds.
+                </p>
+              </div>
+            </div>
+            <div class="twobox-cell twobox-image img-map"> </div>
+          </div>
+        </section>
+
+        <section id="press">
+          <div class="content-width text-content onebox-text">
+            <h2>Press & Sponsorship</h2>
+
+            <p>
+            Ian has a PR team with more than 20 years experience in radio, television,
+            print and online / digital journalism to manage publicity before, during and
+            after the challenge. The strategy is to generate mainstream coverage,
+            encouraging the public and organisations to donate to the charities.
+            </p>
+
+            <p>
+            Ian is also seeking special sponsorship partners to support his Solo North
+            Atlantic Row. The additional funding requirement is £30,000. Raising this will
+            ensure that all donations go directly to the chosen charities.
+            </p>
+
+
+            <p>
+            Partners will have their logo displayed on the boat, and the mainstream
+            coverage provided by the PR team will ensure a high profile for their company
+            or project.
+            </p>
+
+            <p>
+            With his experiences as a special forces soldier, international risk manager,
+            sailor, mountaineer, cyclist, swimmer, triathlete and, most recently, a
+            volunteer assisting veterans, Ian can also offer his time as a speaker for
+            sponsors at both private or public events.
+            </p>
+            <p class="contact">
+              Contact:
+              <a href="mailto:{{ config.extra.email }}">
+                {{ config.extra.email }}
+              </a>
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="content-width">
+        </div>
+      </footer>
+{% endblock body %}
