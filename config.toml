@@ -2,5 +2,5 @@ base_url = "https://rowsentinel.com"
 compile_sass = true
 
 [extra]
-dontation_url = "https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1005329"
+dontation_url = "http://uk.virginmoneygiving.com/fund/sentinel"
 email = "northatlanticrower@marsandminerva.co.uk"
