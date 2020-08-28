@@ -12,24 +12,17 @@
   src: url("Catamaran-Regular.ttf");
 }
 
-@font-face {
-  font-family: 'Catamaran Bold';
-  font-display: swap;
-  src: url("Catamaran-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'Cardo';
-  font-display: swap;
-  src: url("Cardo-Regular.ttf");
-}
-
 a {
   text-decoration: none;
 }
 
-$imperial-red: #E63946;
-$imperial-red-brighter: #FF2939;
+p, span, a {
+  font-family: 'Catamaran', sans-serif;
+}
+
+$row-sentinel-red: #dc0019;
+$row-sentinel-red-brighter: #ff001d;
+$row-sentinel-blue: #191e3e;
 $background-grey: #F4F4F4;
 
 $mobile-width: 520px;
@@ -51,20 +44,13 @@ $max-page-width: 1800px;
   margin-right: auto;
 }
 
+.rowsentinel-logo {
+    height: 120px;
+    width: auto;
+}
 
 .header-content {
   display: flex;
-}
-
-.header-content > h1 {
-  font-size: 2.2em;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: 'Cardo', serif;
-  font-weight: lighter;
 }
 
 .header-content > nav {
@@ -74,7 +60,7 @@ $max-page-width: 1800px;
 .header-content > nav > a {
   font-family: 'Catamaran Medium', sans-serif;
   font-size: 1.2em;
-  color: black;
+  color: $row-sentinel-blue;
   transition: all 0.2s;
 }
 
@@ -89,17 +75,28 @@ $max-page-width: 1800px;
   color: white;
   display: inline-block;
   padding: 18px 36px;
-  background-color: $imperial-red;
+  background-color: $row-sentinel-red;
   box-sizing: border-box;
   transition: all 0.2s;
 }
 
 .donate-button:hover {
-  background-color: $imperial-red-brighter;
+  background-color: $row-sentinel-red-brighter;
 }
 
-.hero-image {
+.vid-container {
+  position: relative;
   width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;  /* 16:9 */
+}
+
+.promo-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .twobox {
@@ -107,10 +104,11 @@ $max-page-width: 1800px;
 }
 
 .twobox-cell {
+  display: flex;
+  align-items: center;
   flex: 1;
   overflow: hidden;
 }
-
 
 .greybox {
   background-color: $background-grey;
@@ -154,21 +152,23 @@ $max-page-width: 1800px;
   .header-content > nav {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
   }
 }
 
 // Tablet screens only
 @media only screen and (min-width: $mobile-width + 1) and (max-width: $medium-width) {
   .twobox-image {
-    min-height: 420px;
+    min-height: 470px;
   }
   .twobox-text-lower, .twobox-text-upper {
     padding: 70px 20px 60px 20px;
   }
 
   .header-content > nav {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     display: flex;
   }
 }
@@ -177,7 +177,8 @@ $max-page-width: 1800px;
 @media only screen and (max-width: $medium-width) {
 
   .header-content {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   .header-content > nav > a {
@@ -198,34 +199,44 @@ $max-page-width: 1800px;
     text-align: center;
   }
 
+  .footer-content {
+    flex-direction: column;
+    padding: 20px 10px 10px 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .social-links, .contact {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .sponsor {
+    flex-direction: column;
+  }
+
+  .sponsor-logo-outer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sponsor-logo-inner {
+    max-width: 400px;
+  }
+
+  .social-logos {
+    justify-content: center;
+  }
+
 }
 
-// Small computer screens only
-@media only screen and (min-width: $medium-width + 1) and (max-width: $large-width) {
-  .twobox-image {
-    min-height: 400px;
-  }
-
-  .twobox-cell > .text-content > p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  .twobox-cell > .text-content > h2 {
-    font-size: 2.2em;
-  }
-
-}
-
-// Big computer screens only
-@media only screen and (min-width: $large-width + 1) {
-  .twobox-image {
-    min-height: 450px;
-  }
-
-}
-
-// All computer screens
+// Computer screens
 @media only screen and (min-width: $medium-width + 1) {
+
+  .twobox-image {
+    min-height: 580px;
+  }
 
   .header-content > nav > a {
     display: inline-block;
@@ -242,19 +253,57 @@ $max-page-width: 1800px;
   }
 
   .twobox-text-lower {
-    margin: 5% 45px 5% auto;
+    margin-right: 40px;
+    margin-left: auto;
     padding-left: 20px;
   }
 
   .twobox-text-upper {
-    margin: 5% auto 5% 45px;
+    margin-left: 40px;
+    margin-right: auto;
     padding-right: 20px;
   }
 
   .header-content {
-    padding: 36px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 28px;
+    padding-bottom: 38px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer-content {
+      justify-content: space-between;
+  }
+
+  .sponsor-logo-outer {
+    flex: 1;
+  }
+
+  .sponsor-text {
+    padding-left: 40px;
+    flex: 2;
+  }
+
+  .sponsor {
+    flex-direction: row;
+  }
+
+  .sponsor-logo-inner {
+    width: 75%;
+  }
+
+  .sponsor-logo-outer {
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.05);
+  }
+
+  .social-logos {
+    justify-content: flex-start;
+  }
+
+  .social-links p {
+    margin-left: 5px;
   }
 }
 
@@ -280,36 +329,35 @@ $max-page-width: 1800px;
     padding: 70px 20px 60px 20px;
   }
 
+  .footer-content {
+    padding: 60px 20px 60px 20px;
+  }
+
+  .sponsor-logo-outer {
+    height: 200px;
+  }
+
 }
 
-
-
 .text-content > h2 {
-  font-family: 'Cardo', serif;
-  font-weight: lighter;
+  color: $row-sentinel-blue;
+  font-family: 'Catamaran Medium', sans-serif;
   font-size: 2.6em;
   margin-bottom: 28px;
   margin-top: 0px;
 }
 
-.contact > a {
-  color: black;
-  text-decoration: underline;
-  overflow-wrap: break-word;
-}
-
 .text-content > p {
-  font-family: 'Catamaran', sans-serif;
   font-size: 1.4em;
   line-height: 1.6;
 }
 
 .img-ian {
-  background-image: url(ian2.jpg);
+  background-image: url(ian.jpg);
 }
 
 .img-map {
-  background-image: url(map.jpg);
+  background-image: url(map.png);
 }
 
 .twobox-image {
@@ -318,6 +366,85 @@ $max-page-width: 1800px;
 }
 
 footer {
-  height: 60px;
   background-color: $background-grey;
+  font-size: 1.2em;
 }
+
+.footer-content {
+  display: flex;
+}
+
+.social-links p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.social-logos img {
+  width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.facebook-logo {
+  height: 40px;
+}
+
+.twitter-logo {
+  height: 40px;
+}
+
+.youtube-logo {
+  height: 46px;
+}
+
+.instagram-logo {
+  height: 42px;
+}
+
+.social-logos {
+  display: flex;
+  width: 250px;
+  align-items: center;
+}
+
+.contact > a {
+  color: black;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.sponsors-container {
+  margin-top: 70px;
+}
+
+.sponsors-container > h3 {
+  color: $row-sentinel-blue;
+  font-family: 'Catamaran Medium', sans-serif;
+  font-size: 1.6em;
+}
+
+.sponsor-logo-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logo-inner img {
+  height: auto;
+  width: 100%;
+}
+
+.sponsor {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.sponsor-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.sponsor-text p {
+  margin-top: 0;
+}
+

@@ -4,3 +4,11 @@ compile_sass = true
 [extra]
 dontation_url = "http://uk.virginmoneygiving.com/fund/sentinel"
 email = "northatlanticrower@marsandminerva.co.uk"
+facebook_url = "https://www.facebook.com/rowsentinel"
+twitter_url = "https://twitter.com/rowsentinel"
+instagram_url = "http://instagram.com/rowsentinel"
+youtube_url = "https://www.youtube.com/channel/UCMeP2FD61zwwsdtkMD0FmEw"
+youtube_promo_url = "https://www.youtube.com/embed/eb4bH0K_5io"
+
+kinetic6_url = "https://www.kinetic6.co.uk"
+serbus_url = "https://serbusgroup.com/secure-mobile-communication-tools"

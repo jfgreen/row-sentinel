@@ -2,12 +2,13 @@
 
 {% block head %}
     <title>Row Sentinel</title>
+    <meta name="description" content="Solo North Atlantic Crossing">
 {% endblock head %}
 
 {% block body %}
       <header>
         <div class="header-content content-width">
-          <h1>Row Sentinel</h1>
+          <img class="rowsentinel-logo" src="rowsentinel.svg" alt="Row Sentinel Logo"/>
           <nav>
             <a href="#about-ian">About Ian</a>
             <a href="#the-route">The Route</a>
@@ -17,8 +18,15 @@
         </div>
       </header>
       <main>
-        <div class="page-width">
-          <img class="hero-image" src="ian1.jpg" />
+        <div class="content-width">
+            <div class="vid-container">
+              <iframe
+                class="promo-vid"
+                src="{{ config.extra.youtube_promo_url }}?modestbranding=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
         </div>
 
         <section id="the-challenge">
@@ -32,7 +40,7 @@
               the absolute limit. Nobody has yet completed an unsupported solo
               from New York.
             </p>
-            <p>
+
 
             <p>
               The row is designed to raise money for the Special Air Service Regimental
@@ -44,10 +52,10 @@
 
             <div class="logobox">
               <div class="logocell">
-                <img src="stmichaels.jpg" />
+                <img src="stmichaels.jpg" alt="St Michaels Hospice Logo"/>
               </div>
               <div class="logocell">
-                <img src="wingeddagger.png" />
+                <img src="wingeddagger.png" alt="SAS Winged Dagger Logo"/>
               </div>
             </div>
 
@@ -119,16 +127,10 @@
             </p>
 
             <p>
-            Ian is also seeking special sponsorship partners to support his Solo North
-            Atlantic Row. The additional funding requirement is £30,000. Raising this will
-            ensure that all donations go directly to the chosen charities.
-            </p>
-
-
-            <p>
-            Partners will have their logo displayed on the boat, and the mainstream
-            coverage provided by the PR team will ensure a high profile for their company
-            or project.
+            Ian is also seeking special sponsorship partners to support his
+            Solo North Atlantic Row. Partners will have their logo displayed on
+            the boat, and the coverage provided by the PR team will ensure a
+            high profile for their company or project.
             </p>
 
             <p>
@@ -137,17 +139,77 @@
             volunteer assisting veterans, Ian can also offer his time as a speaker for
             sponsors at both private or public events.
             </p>
-            <p class="contact">
-              Contact:
-              <a href="mailto:{{ config.extra.email }}">
-                {{ config.extra.email }}
-              </a>
-            </p>
+
+            <div class="sponsors-container">
+            <h3>Sponsors</h3>
+              <div class="sponsor">
+                  <div class="sponsor-logo-outer">
+                    <div class="sponsor-logo-inner">
+                      <a href="{{ config.extra.kinetic6_url }}">
+                        <img src="kinetic6logo.png" alt="Kinetic6 Logo"></img>
+                      </a>
+                    </div>
+                </div>
+
+                <div class="sponsor-text">
+                  <p>
+                  Kinetic Six has a mission to deliver market-leading secure
+                  telecommunications and cyber security products and services to
+                  consumers, business and governments. Established by former UK
+                  Special Forces Communicators, Kinetic Six employs a mix of
+                  multi-national former military, cyber intelligence and commercial
+                  experts, while building on the proven reputation for delivering
+                  excellence.
+                  </p>
+                </div>
+
+              </div>
+              <div class="sponsor">
+                <div class="sponsor-logo-outer">
+                    <div class="sponsor-logo-inner">
+                      <a href="{{ config.extra.serbus_url }}">
+                        <img src="serbuslogo.png" alt="Serbus Logo"></img>
+                      </a>
+                    </div>
+                </div>
+                <div class="sponsor-text">
+                  <p>
+                  For over a decade, Serbus has provided clients with the most
+                  secure mobile communication tools that offer top level security,
+                  threat-protection, and compliancy, in order to ensure day-to-day
+                  operations remain productive and uninterrupted, wherever your
+                  teams are working in the world.
+                  </p>
+
+                  <p>
+                  Serbus’s founders and directors are former UK Special Forces and between them
+                  have built a strong, diverse and security vetted team, who are trusted to
+                  provide their expertise and solutions to the UK government, MoD, and many world
+                  class brands and organisations of all sizes.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="content-width">
+      <footer class="page-width">
+        <div class="footer-content content-width">
+          <div class="contact">
+            <span>Contact:</span>
+            <a href="mailto:{{ config.extra.email }}">
+            {{ config.extra.email }}
+            </a>
+          </div>
+          <div class="social-links">
+            <p>Follow Row Sentinel</p>
+            <div class="social-logos">
+              <a href="{{ config.extra.facebook_url }}"><img class="facebook-logo" src="facebook.svg" alt="Facebook Logo"/></a>
+              <a href="{{ config.extra.twitter_url }}"><img class="twitter-logo" src="twitter.svg" alt="Twitter Logo"/></a>
+              <a href="{{ config.extra.youtube_url }}"><img class="youtube-logo" src="youtube.svg" alt="Youtube Logo"/></a>
+              <a href="{{ config.extra.instagram_url }}"><img class="instagram-logo" src="instagram.svg" alt="Instagram Logo"/></a>
+            </div>
+          </div>
         </div>
       </footer>
 {% endblock body %}
