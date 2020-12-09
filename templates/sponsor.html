@@ -1,0 +1,11 @@
+{% macro logo(name, url) %}
+<div class="sponsor sponsor-{{  name  }}">
+  <div class="sponsor-logo-outer">
+    <div class="sponsor-logo-inner">
+      <a href="{{ url }}">
+        <img src="{{ name }}logo.png" alt="{{ name }} logo"></img>
+      </a>
+    </div>
+  </div>
+</div>
+{% endmacro logo %}

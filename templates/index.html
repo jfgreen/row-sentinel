@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% import "sponsor.html" as sponsor %}
+
 {% block head %}
     <title>Row Sentinel</title>
     <meta name="description" content="Solo North Atlantic Crossing">
@@ -140,114 +142,39 @@
             sponsors at both private or public events.
             </p>
 
-            <div class="sponsors-container">
-            <h3>Gold Sponsor</h3>
-              <div class="sponsor-container sponsor-gold sponsor-spectra">
-                  <div class="sponsor-logo-outer">
-                    <div class="sponsor-logo-inner">
-                      <a href="{{ config.extra.spectragroup_url }}">
-                        <img src="spectragrouplogo.png" alt="Spectra Group Logo"></img>
-                      </a>
-                    </div>
-                </div>
-
-                <div class="sponsor-text">
-                  <p>
-
-                  Founded in 2002, Spectra Group (UK) is a leading provider of
-                  secure voice, data and satellite communications, for
-                  locations with limited or compromised infrastructure. </p>
-
-                  <p>
-
-                  Providing to Defence &amp; Security, Aid &amp; Emergency and
-                  Commercial Utilities, at the centre of Spectra’s service
-                  delivery is its Network Operations Centre (NOC). Using an
-                  extensive suite of tools, Spectra’s experienced NOC staff
-                  monitor the services and provide a helpdesk function to
-                  customers.
-
-                  </p>
-                </div>
-              </div>
-            <h3>Silver Sponsor</h3>
-              <div class="sponsor-container sponsor-silver sponsor-drystone">
-                <div class="sponsor-logo-outer">
-                  <div class="sponsor-logo-inner">
-                     <a href="{{ config.extra.drystonechambers_url }}">
-                       <img src="drystonechamberslogo.png" alt="Drystone Chambers Logo"></img>
-                     </a>
-                   </div>
-                </div>
-                <div class="sponsor-text">
-                  <p>
-
-                  Leading barrister sets Dyers Chambers and One Paper
-                  Buildings merged in July 2015 to create Drystone Chambers,
-                  the chambers of Karim Khalil QC and Andrew Campbell-Tiech
-                  QC. Drystone Chambers boasts a membership of 67 including 7
-                  QCs. Based at 35 Bedford Row, Drystone Chambers will provide
-                  enhanced services to its individual, business and public
-                  authority clients across the UK and abroad.
-
-                  </p>
-                </div>
-              </div>
-            <h3>Bronze Sponsors</h3>
-            <div class="sponsor-container bronze-sponsors">
-              <div class="sponsor-prometheus">
-                  <div class="sponsor-logo-outer">
-                    <div class="sponsor-logo-inner">
-                      <a href="{{ config.extra.prometheus_url }}">
-                        <img src="prometheuslogo.png" alt="Prometheus Logo"></img>
-                      </a>
-                    </div>
-                </div>
-
-                <div class="sponsor-text">
-                </div>
-              </div>
-              <div class="sponsor-velador">
-                  <div class="sponsor-logo-outer">
-                    <div class="sponsor-logo-inner">
-                      <a href="{{ config.extra.velador_url }}">
-                        <img src="veladorlogo.png" alt="Velador Logo"></img>
-                      </a>
-                    </div>
-                </div>
-
-                <div class="sponsor-text">
-                </div>
+            <div class="sponsor-tier">
+              <h3>Platinum Sponsors</h3>
+              <div class="sponsorlist platinum-sponsors">
+			    {{ sponsor::logo(name="grenade", url=config.extra.grenade_url) }}
               </div>
             </div>
-            <h3>Equipment Sponsors</h3>
-            <div class="sponsor-container equipment-sponsors">
-              <div class="sponsor-kinetic6">
-                  <div class="sponsor-logo-outer">
-                    <div class="sponsor-logo-inner">
-                      <a href="{{ config.extra.kinetic6_url }}">
-                        <img src="kinetic6logo.png" alt="Kinetic6 Logo"></img>
-                      </a>
-                    </div>
-                </div>
+            <div class="sponsor-tier">
+              <h3>Gold Sponsors</h3>
+              <div class="sponsorlist gold-sponsors">
+			    {{ sponsor::logo(name="spectragroup", url=config.extra.spectragroup_url) }}
+			    {{ sponsor::logo(name="hexegic", url=config.extra.hexegic_url) }}
               </div>
-              <div class="sponsor-levelpeaks">
-                <div class="sponsor-logo-outer">
-                    <div class="sponsor-logo-inner">
-                      <a href="{{ config.extra.levelpeaks_url }}">
-                        <img src="levelpeakslogo.png" alt="Level Peaks Logo"></img>
-                      </a>
-                    </div>
-                </div>
+            </div>
+            <div class="sponsor-tier">
+              <h3>Silver Sponsors</h3>
+              <div class="sponsorlist silver-sponsors">
+		        {{ sponsor::logo(name="drystone", url=config.extra.drystone_url) }}
               </div>
-              <div class="sponsor-serbus">
-                <div class="sponsor-logo-outer">
-                    <div class="sponsor-logo-inner">
-                      <a href="{{ config.extra.serbus_url }}">
-                        <img src="serbuslogo.png" alt="Serbus Logo"></img>
-                      </a>
-                    </div>
-                </div>
+            </div>
+            <div class="sponsor-tier">
+              <h3>Bronze Sponsors</h3>
+              <div class="sponsorlist bronze-sponsors">
+			    {{ sponsor::logo(name="prometheus", url=config.extra.prometheus_url) }}
+			    {{ sponsor::logo(name="velador", url=config.extra.velador_url) }}
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <h3>Equipment Sponsors</h3>
+              <div class="sponsorlist equipment-sponsors">
+			    {{ sponsor::logo(name="kinetic6", url=config.extra.kinetic6_url) }}
+			    {{ sponsor::logo(name="levelpeaks", url=config.extra.levelpeaks_url) }}
+			    {{ sponsor::logo(name="serbus", url=config.extra.serbus_url) }}
+			    {{ sponsor::logo(name="halo", url=config.extra.halo_url) }}
               </div>
             </div>
           </div>
