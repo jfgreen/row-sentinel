@@ -276,7 +276,7 @@ p, span, a {
     width:auto
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 700px) {
     .twobox-image {
         min-height:290px
     }
@@ -349,6 +349,14 @@ p, span, a {
         max-width:150px
     }
 
+    .sponsor-silverback .sponsor-logo-inner {
+        max-width:150px
+    }
+
+    .sponsor-dakin .sponsor-logo-inner {
+        max-width:230px
+    }
+
     .sponsor-kinetic6 .sponsor-logo-inner {
         max-width:190px
     }
@@ -370,7 +378,7 @@ p, span, a {
     }
 }
 
-@media only screen and (min-width: 581px) and (max-width: 1000px) {
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
     .twobox-image {
         min-height:470px
     }
@@ -422,11 +430,19 @@ p, span, a {
     }
 
     .sponsor-prometheus .sponsor-logo-inner {
-        max-width:150px
+        max-width:120px
     }
 
     .sponsor-velador .sponsor-logo-inner {
-        max-width:150px
+        max-width:130px
+    }
+
+    .sponsor-silverback .sponsor-logo-inner {
+        max-width:130px
+    }
+
+    .sponsor-dakin .sponsor-logo-inner {
+        max-width:140px
     }
 
     .sponsor-kinetic6 .sponsor-logo-inner {
@@ -573,7 +589,15 @@ p, span, a {
     }
 
     .sponsor-velador .sponsor-logo-inner {
-        max-width:200px
+        max-width:190px
+    }
+
+    .sponsor-silverback .sponsor-logo-inner {
+        max-width:190px
+    }
+
+    .sponsor-dakin .sponsor-logo-inner {
+        max-width:210px
     }
 
     .sponsor-kinetic6 .sponsor-logo-inner {
@@ -601,7 +625,7 @@ p, span, a {
     }
 }
 
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: 701px) {
     .logocell {
         background-color: white;
         width: 300px;
