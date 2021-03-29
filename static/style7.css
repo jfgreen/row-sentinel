@@ -350,10 +350,26 @@ p, span, a {
     }
 
     .sponsor-silverback .sponsor-logo-inner {
-        max-width:150px
+        max-width:180px
     }
 
     .sponsor-dakin .sponsor-logo-inner {
+        max-width:230px
+    }
+
+    .sponsor-inspire .sponsor-logo-inner {
+        max-width:230px
+    }
+
+    .sponsor-harwin .sponsor-logo-inner {
+        max-width:210px
+    }
+
+    .sponsor-elliotbrown .sponsor-logo-inner {
+        max-width:210px
+    }
+
+    .sponsor-clearstorage .sponsor-logo-inner {
         max-width:230px
     }
 
@@ -443,6 +459,22 @@ p, span, a {
 
     .sponsor-dakin .sponsor-logo-inner {
         max-width:140px
+    }
+
+    .sponsor-harwin .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-inspire .sponsor-logo-inner {
+        max-width:140px;
+    }
+
+    .sponsor-elliotbrown .sponsor-logo-inner {
+        max-width:140px;
+    }
+
+    .sponsor-clearstorage .sponsor-logo-inner {
+        max-width:145px;
     }
 
     .sponsor-kinetic6 .sponsor-logo-inner {
@@ -598,6 +630,22 @@ p, span, a {
 
     .sponsor-dakin .sponsor-logo-inner {
         max-width:210px
+    }
+
+    .sponsor-harwin .sponsor-logo-inner {
+        max-width:210px
+    }
+
+    .sponsor-inspire .sponsor-logo-inner {
+        max-width:210px
+    }
+
+    .sponsor-elliotbrown .sponsor-logo-inner {
+        max-width:200px
+    }
+
+    .sponsor-clearstorage .sponsor-logo-inner {
+        max-width:205px
     }
 
     .sponsor-kinetic6 .sponsor-logo-inner {
