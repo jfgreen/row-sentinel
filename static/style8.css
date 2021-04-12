@@ -306,19 +306,19 @@ p, span, a {
     }
 
     .platinum-sponsors .sponsor-logo-outer {
-        height:230px
+        height:180px
     }
 
     .gold-sponsors .sponsor-logo-outer {
-        height:210px
+        height:160px
     }
 
     .silver-sponsors .sponsor-logo-outer {
-        height:200px
+        height:150px
     }
 
     .bronze-sponsors .sponsor-logo-outer {
-        height:200px
+        height:140px
     }
 
     .equipment-sponsors .sponsor-logo-outer {
@@ -337,12 +337,16 @@ p, span, a {
         max-width:300px
     }
 
+    .sponsor-valbruna .sponsor-logo-inner {
+        max-width:350px
+    }
+
     .sponsor-drystone .sponsor-logo-inner {
         max-width:290px
     }
 
     .sponsor-prometheus .sponsor-logo-inner {
-        max-width:150px
+        max-width:110px
     }
 
     .sponsor-velador .sponsor-logo-inner {
@@ -381,6 +385,10 @@ p, span, a {
         max-width:200px
     }
 
+    .sponsor-carnegie .sponsor-logo-inner {
+        max-width:220px
+    }
+
     .sponsor-halo .sponsor-logo-inner {
         max-width:120px
     }
@@ -410,19 +418,19 @@ p, span, a {
     }
 
     .platinum-sponsors .sponsor-logo-outer {
-        height:250px
-    }
-
-    .gold-sponsors .sponsor-logo-outer {
         height:230px
     }
 
-    .silver-sponsors .sponsor-logo-outer {
+    .gold-sponsors .sponsor-logo-outer {
         height:200px
     }
 
+    .silver-sponsors .sponsor-logo-outer {
+        height:170px
+    }
+
     .bronze-sponsors .sponsor-logo-outer {
-        height:200px
+        height:150px
     }
 
     .equipment-sponsors .sponsor-logo-outer {
@@ -430,7 +438,7 @@ p, span, a {
     }
 
     .sponsor-grenade .sponsor-logo-inner {
-        max-width:600px
+        max-width: 470px
     }
 
     .sponsor-spectragroup .sponsor-logo-inner {
@@ -441,12 +449,16 @@ p, span, a {
         max-width:300px
     }
 
+    .sponsor-valbruna .sponsor-logo-inner {
+        max-width:420px
+    }
+
     .sponsor-drystone .sponsor-logo-inner {
         max-width:290px
     }
 
     .sponsor-prometheus .sponsor-logo-inner {
-        max-width:120px
+        max-width:110px
     }
 
     .sponsor-velador .sponsor-logo-inner {
@@ -485,12 +497,16 @@ p, span, a {
         max-width:120px
     }
 
+    .sponsor-carnegie .sponsor-logo-inner {
+        max-width:130px
+    }
+
     .sponsor-halo .sponsor-logo-inner {
-        max-width:90px
+        max-width: 85px
     }
 
     .sponsor-levelpeaks .sponsor-logo-inner {
-        max-width:90px
+        max-width: 85px
     }
 }
 
@@ -581,35 +597,39 @@ p, span, a {
     }
 
     .platinum-sponsors .sponsor-logo-outer {
-        height:300px
-    }
-
-    .gold-sponsors .sponsor-logo-outer {
-        height:300px
-    }
-
-    .silver-sponsors .sponsor-logo-outer {
         height:250px
     }
 
+    .gold-sponsors .sponsor-logo-outer {
+        height:220px
+    }
+
+    .silver-sponsors .sponsor-logo-outer {
+        height:200px
+    }
+
     .bronze-sponsors .sponsor-logo-outer {
-        height:300px
+        height: 200px
     }
 
     .equipment-sponsors .sponsor-logo-outer {
-        height:230px
+        height: 160px
     }
 
     .sponsor-grenade .sponsor-logo-inner {
-        max-width:700px
+        max-width: 550px
     }
 
     .sponsor-spectragroup .sponsor-logo-inner {
-        max-width:400px
+        max-width:300px
+    }
+
+    .sponsor-valbruna .sponsor-logo-inner {
+        max-width: 300px
     }
 
     .sponsor-hexegic .sponsor-logo-inner {
-        max-width:400px
+        max-width:300px
     }
 
     .sponsor-drystone .sponsor-logo-inner {
@@ -617,11 +637,11 @@ p, span, a {
     }
 
     .sponsor-prometheus .sponsor-logo-inner {
-        max-width:200px
+        max-width: 130px
     }
 
     .sponsor-velador .sponsor-logo-inner {
-        max-width:190px
+        max-width:180px
     }
 
     .sponsor-silverback .sponsor-logo-inner {
@@ -629,15 +649,15 @@ p, span, a {
     }
 
     .sponsor-dakin .sponsor-logo-inner {
-        max-width:210px
+        max-width: 200px
     }
 
     .sponsor-harwin .sponsor-logo-inner {
-        max-width:210px
+        max-width: 200px
     }
 
     .sponsor-inspire .sponsor-logo-inner {
-        max-width:210px
+        max-width: 200px
     }
 
     .sponsor-elliotbrown .sponsor-logo-inner {
@@ -656,12 +676,16 @@ p, span, a {
         max-width:160px
     }
 
+    .sponsor-carnegie .sponsor-logo-inner {
+        max-width:180px;
+    }
+
     .sponsor-halo .sponsor-logo-inner {
-        max-width:140px
+        max-width: 100px
     }
 
     .sponsor-levelpeaks .sponsor-logo-inner {
-        max-width:140px
+        max-width: 100px
     }
 
     .social-logos {
