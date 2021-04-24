@@ -306,27 +306,31 @@ p, span, a {
     }
 
     .platinum-sponsors .sponsor-logo-outer {
-        height:180px
-    }
-
-    .gold-sponsors .sponsor-logo-outer {
-        height:160px
-    }
-
-    .silver-sponsors .sponsor-logo-outer {
-        height:150px
-    }
-
-    .bronze-sponsors .sponsor-logo-outer {
         height:140px
     }
 
-    .equipment-sponsors .sponsor-logo-outer {
+    .gold-sponsors .sponsor-logo-outer {
+        height:140px
+    }
+
+    .silver-sponsors .sponsor-logo-outer {
         height:130px
+    }
+
+    .bronze-sponsors .sponsor-logo-outer {
+        height:120px
+    }
+
+    .equipment-sponsors .sponsor-logo-outer {
+        height:110px
     }
 
     .sponsor-grenade .sponsor-logo-inner {
         max-width:400px
+    }
+
+    .sponsor-crye .sponsor-logo-inner {
+        max-width: 430px
     }
 
     .sponsor-spectragroup .sponsor-logo-inner {
@@ -346,11 +350,15 @@ p, span, a {
     }
 
     .sponsor-prometheus .sponsor-logo-inner {
-        max-width:110px
+        max-width:100px
     }
 
     .sponsor-velador .sponsor-logo-inner {
-        max-width:150px
+        max-width:130px
+    }
+
+    .sponsor-rowell .sponsor-logo-inner {
+        max-width:200px
     }
 
     .sponsor-silverback .sponsor-logo-inner {
@@ -377,6 +385,10 @@ p, span, a {
         max-width:230px
     }
 
+    .sponsor-ct .sponsor-logo-inner {
+        max-width:250px
+    }
+
     .sponsor-kinetic6 .sponsor-logo-inner {
         max-width:190px
     }
@@ -395,6 +407,10 @@ p, span, a {
 
     .sponsor-levelpeaks .sponsor-logo-inner {
         max-width:120px
+    }
+
+    .sponsor-511 .sponsor-logo-inner {
+        max-width: 140px
     }
 
     .sponsor {
@@ -418,27 +434,31 @@ p, span, a {
     }
 
     .platinum-sponsors .sponsor-logo-outer {
-        height:230px
-    }
-
-    .gold-sponsors .sponsor-logo-outer {
         height:200px
     }
 
+    .gold-sponsors .sponsor-logo-outer {
+        height:180px
+    }
+
     .silver-sponsors .sponsor-logo-outer {
-        height:170px
+        height:140px
     }
 
     .bronze-sponsors .sponsor-logo-outer {
-        height:150px
+        height:130px
     }
 
     .equipment-sponsors .sponsor-logo-outer {
-        height:120px
+        height:100px
     }
 
     .sponsor-grenade .sponsor-logo-inner {
-        max-width: 470px
+        max-width: 370px
+    }
+
+    .sponsor-crye .sponsor-logo-inner {
+        max-width: 400px
     }
 
     .sponsor-spectragroup .sponsor-logo-inner {
@@ -458,11 +478,11 @@ p, span, a {
     }
 
     .sponsor-prometheus .sponsor-logo-inner {
-        max-width:110px
+        max-width:100px
     }
 
     .sponsor-velador .sponsor-logo-inner {
-        max-width:130px
+        max-width:110px
     }
 
     .sponsor-silverback .sponsor-logo-inner {
@@ -474,6 +494,14 @@ p, span, a {
     }
 
     .sponsor-harwin .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-rowell .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-ct .sponsor-logo-inner {
         max-width:140px
     }
 
@@ -499,6 +527,10 @@ p, span, a {
 
     .sponsor-carnegie .sponsor-logo-inner {
         max-width:130px
+    }
+
+    .sponsor-511 .sponsor-logo-inner {
+        max-width: 90px
     }
 
     .sponsor-halo .sponsor-logo-inner {
@@ -605,19 +637,23 @@ p, span, a {
     }
 
     .silver-sponsors .sponsor-logo-outer {
-        height:200px
+        height:180px
     }
 
     .bronze-sponsors .sponsor-logo-outer {
-        height: 200px
-    }
-
-    .equipment-sponsors .sponsor-logo-outer {
         height: 160px
     }
 
+    .equipment-sponsors .sponsor-logo-outer {
+        height: 140px
+    }
+
     .sponsor-grenade .sponsor-logo-inner {
-        max-width: 550px
+        max-width: 480px
+    }
+
+    .sponsor-crye .sponsor-logo-inner {
+        max-width: 500px
     }
 
     .sponsor-spectragroup .sponsor-logo-inner {
@@ -641,11 +677,11 @@ p, span, a {
     }
 
     .sponsor-velador .sponsor-logo-inner {
-        max-width:180px
+        max-width:140px
     }
 
     .sponsor-silverback .sponsor-logo-inner {
-        max-width:190px
+        max-width:180px
     }
 
     .sponsor-dakin .sponsor-logo-inner {
@@ -653,15 +689,23 @@ p, span, a {
     }
 
     .sponsor-harwin .sponsor-logo-inner {
-        max-width: 200px
+        max-width: 190px
     }
 
     .sponsor-inspire .sponsor-logo-inner {
-        max-width: 200px
+        max-width: 180px
     }
 
     .sponsor-elliotbrown .sponsor-logo-inner {
         max-width:200px
+    }
+
+    .sponsor-rowell .sponsor-logo-inner {
+        max-width: 190px
+    }
+
+    .sponsor-ct .sponsor-logo-inner {
+        max-width: 190px
     }
 
     .sponsor-clearstorage .sponsor-logo-inner {
@@ -682,6 +726,10 @@ p, span, a {
 
     .sponsor-halo .sponsor-logo-inner {
         max-width: 100px
+    }
+
+    .sponsor-511 .sponsor-logo-inner {
+        max-width: 110px
     }
 
     .sponsor-levelpeaks .sponsor-logo-inner {
@@ -837,14 +885,14 @@ h3 {
     padding-right:40px
 }
 
-.brozne-sponsors .sponsor-logo-inner {
-    padding-left: 40px;
-    padding-right:40px
+.bronze-sponsors .sponsor-logo-inner {
+    padding-left: 20px;
+    padding-right: 20px
 }
 
 .equipment-sponsors .sponsor-logo-inner {
-    padding-left: 10px;
-    padding-right:10px
+    padding-left: 15px;
+    padding-right: 15px
 }
 
 .sponsorlist {
