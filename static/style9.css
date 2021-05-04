@@ -301,6 +301,11 @@ p, span, a {
         padding-bottom:25px
     }
 
+    .onebox-social {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .sponsorlist {
         flex-direction:column
     }
@@ -743,6 +748,7 @@ p, span, a {
     .social-links p {
         margin-left:5px
     }
+
 }
 
 @media only screen and (min-width: 701px) {
@@ -773,6 +779,13 @@ p, span, a {
     .sponsorlist {
         flex-direction:row
     }
+
+    .twitterbox {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #F4F4F4;
+        border-width: 1px;
+    }
 }
 
 h2 {
@@ -781,6 +794,11 @@ h2 {
     font-size: 2.6em;
     margin-bottom: 28px;
     margin-top: 0;
+}
+
+.twitterbox {
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .text-content > p {
