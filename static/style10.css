@@ -780,12 +780,15 @@ p, span, a {
         flex-direction:row
     }
 
-    .twitterbox {
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .widgetbox {
         background-color: #F4F4F4;
         border-width: 1px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
     }
+
 }
 
 h2 {
@@ -796,10 +799,24 @@ h2 {
     margin-top: 0;
 }
 
-.twitterbox {
-    text-align: center;
-    margin-bottom: 80px;
+iframe {
+    border-width: 0;
 }
+
+.widget-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 600px;
+}
+
+.twitter-wrapper {
+    max-width: 600px;
+}
+
+.widgetbox {
+    margin-bottom: 40px;
+}
+
 
 .text-content > p {
     font-size: 1.4em;
