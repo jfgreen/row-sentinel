@@ -276,7 +276,18 @@ p, span, a {
     width:auto
 }
 
+/*! Mobile only */
 @media only screen and (max-width: 700px) {
+
+    h2 {
+        font-size: 2.0em;
+    }
+
+    .text-content > p {
+        font-size: 1.2em;
+        line-height:1.4;
+    }
+
     .twobox-image {
         min-height:290px
     }
@@ -294,16 +305,15 @@ p, span, a {
         padding:40px 10px 30px 10px
     }
 
+    .onebox-widgets {
+        padding:0px 10px 30px 10px
+    }
+
     .header-content > nav {
         display: flex;
         flex-direction: column;
         padding-top: 15px;
         padding-bottom:25px
-    }
-
-    .onebox-social {
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .sponsorlist {
@@ -421,9 +431,33 @@ p, span, a {
     .sponsor {
         margin-bottom:20px
     }
+
+
+    .tracker {
+        height: 350px;
+    }
+
+    #twitter-widget-0 {
+        max-height: 350px;
+    }
+
+    .twitter-widget {
+        padding-top: 30px;
+    }
+
 }
 
+/*! Tablet only */
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .text-content > p {
+        font-size: 1.3em;
+        line-height:1.5;
+    }
+
     .twobox-image {
         min-height:470px
     }
@@ -545,8 +579,22 @@ p, span, a {
     .sponsor-levelpeaks .sponsor-logo-inner {
         max-width: 85px
     }
+
+    .tracker {
+        height: 400px;
+    }
+
+
+    #twitter-widget-0 {
+        max-height: 400px;
+    }
+
+    .twitter-widget {
+        padding-top: 35px;
+    }
 }
 
+/*! Tablet and mobile */
 @media only screen and (max-width: 1000px) {
     .header-content {
         padding-top: 20px;
@@ -587,9 +635,32 @@ p, span, a {
     .social-logos {
         justify-content:center
     }
+
+    .widgetbox {
+        flex-direction: column;
+    }
+
+    .widgetbox-left {
+        flex: 1;
+    }
+
+    .widgetbox-right {
+        flex: 1;
+    }
 }
 
+/*! Computer only */
 @media only screen and (min-width: 1001px) {
+
+    h2 {
+        font-size: 2.6em;
+    }
+    
+    .text-content > p {
+        font-size: 1.4em;
+        line-height:1.6;
+    }
+
     .twobox-image {
         min-height:580px
     }
@@ -749,6 +820,32 @@ p, span, a {
         margin-left:5px
     }
 
+    .widgetbox {
+        flex-direction: row;
+    }
+
+    .widget-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .widgetbox-left {
+        flex: 2;
+    }
+
+    .widgetbox-right {
+        flex: 1;
+    }
+
+    .tracker {
+        height: 600px;
+    }
+
+
+    .twitter-widget {
+        padding-left: 10px;
+    }
+
 }
 
 @media only screen and (min-width: 701px) {
@@ -769,7 +866,11 @@ p, span, a {
     }
 
     .onebox-text {
-        padding:70px 20px 60px 20px
+        padding:70px 20px 40px 20px
+    }
+
+    .onebox-widgets {
+        padding:0px 20px 80px 20px
     }
 
     .footer-content {
@@ -780,48 +881,28 @@ p, span, a {
         flex-direction:row
     }
 
-    .widgetbox {
-        background-color: #F4F4F4;
-        border-width: 1px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-    }
 
 }
 
 h2 {
     color: #191e3e;
     font-family: 'Catamaran Medium', sans-serif;
-    font-size: 2.6em;
     margin-bottom: 28px;
     margin-top: 0;
 }
+
 
 iframe {
     border-width: 0;
 }
 
-.widget-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 600px;
-}
 
-.twitter-wrapper {
-    max-width: 600px;
-}
 
 .widgetbox {
-    margin-bottom: 40px;
+    display: flex;
 }
 
 
-.text-content > p {
-    font-size: 1.4em;
-    line-height:1.6;
-}
 
 .img-ian {
     background-image:url(ian.jpg)

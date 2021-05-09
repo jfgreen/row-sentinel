@@ -70,21 +70,17 @@
           </div>
         </section>
         <section id="updates">
-          <div class="content-width onebox-social">
+          <div class="content-width onebox-widgets">
               <h2>Updates</h2>
               <div class="widgetbox">
-                <h3>Kinetic Six Tracker</h3>
-                <div class="widget-wrapper">
-                    <iframe src="{{ config.extra.tracking_url }}" width="100%" height="600"> </iframe>
+                <div class="widgetbox-left widget-wrapper">
+                    <iframe src="{{ config.extra.tracking_url }}" width="100%" class="tracker"> </iframe>
                 </div>
-              </div>
-              <div class="widgetbox">
-                <h3>Twitter</h3>
-                <div class="widget-wrapper twitter-wrapper">
+                 <div class="widgetbox-right widget-wrapper twitter-widget">
                   <a class="twitter-timeline"
                       data-lang="en"
-                      data-width="600"
-                      data-height="600"
+                      data-width="100%"
+                      data-height="600px"
                       data-dnt="true"
                       href="https://twitter.com/rowsentinel?ref_src=twsrc%5Etfw">Tweets by rowsentinel</a>
                   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
