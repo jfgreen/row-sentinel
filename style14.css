@@ -1,0 +1,1045 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust:100%
+}
+
+body {
+    margin:0
+}
+
+main {
+    display:block
+}
+
+h1 {
+    font-size: 2em;
+    margin:0.67em 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow:visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size:1em
+}
+
+a {
+    background-color:transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration:underline dotted
+}
+
+b, strong {
+    font-weight:bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size:1em
+}
+
+small {
+    font-size:80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align:baseline
+}
+
+sub {
+    bottom:-0.25em
+}
+
+sup {
+    top:-0.5em
+}
+
+img {
+    border-style:none
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin:0
+}
+
+button, input {
+    overflow:visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline:1px dotted ButtonText
+}
+
+fieldset {
+    padding:0.35em 0.75em 0.625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space:normal
+}
+
+progress {
+    vertical-align:baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance:none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font:inherit
+}
+
+details {
+    display:block
+}
+
+summary {
+    display:list-item
+}
+
+template {
+    display:none
+}
+
+[hidden] {
+    display:none
+}
+
+/*! Row Sentinel CSS */
+
+@font-face {
+    font-family: 'Catamaran Medium';
+    font-display: swap;
+    src: url("Catamaran-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Catamaran';
+    font-display: swap;
+    src: url("Catamaran-Regular.ttf");
+}
+
+a {
+    text-decoration:none;
+}
+
+p, span, a {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.page-width {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right:auto
+}
+
+.content-width {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right:auto
+}
+
+.rowsentinel-logo {
+    height: 120px;
+    width:auto
+}
+
+.header-content {
+    display:flex
+}
+
+.header-content > nav {
+    display:inline-block
+}
+
+.header-content > nav > a {
+    font-family: 'Catamaran Medium', sans-serif;
+    font-size: 1.2em;
+    color: #191e3e;
+    transition:all 0.2s
+}
+
+.header-content > nav > a:hover {
+    text-decoration:underline
+}
+
+.donate-button {
+    font-family: 'Catamaran Medium', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    display: inline-block;
+    padding: 18px 36px;
+    background-color: #dc0019;
+    box-sizing: border-box;
+    transition:all 0.2s
+}
+
+.donate-button:hover {
+    background-color:#ff001d
+}
+
+.vid-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom:56.25%
+}
+
+.promo-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%
+}
+
+.twobox {
+    display:flex
+}
+
+.twobox-cell {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    overflow:hidden
+}
+
+.greybox {
+    background-color:#F4F4F4
+}
+
+.logobox {
+    display: flex;
+    justify-content:center
+}
+
+.logocell {
+    display: flex;
+    justify-content:center
+}
+
+.logocell > img {
+    height: 140px;
+    width:auto
+}
+
+/*! Mobile only */
+@media only screen and (max-width: 700px) {
+
+    h2 {
+        font-size: 2.0em;
+    }
+
+    .text-content > p {
+        font-size: 1.2em;
+        line-height:1.4;
+    }
+
+    .twobox-image {
+        min-height:290px
+    }
+
+    .logobox {
+        flex-direction: column;
+        align-items:center
+    }
+
+    .logocell {
+        margin:20px
+    }
+
+    .twobox-text-lower, .twobox-text-upper, .onebox-text {
+        padding:40px 10px 30px 10px
+    }
+
+    .onebox-widgets {
+        padding:0px 10px 30px 10px
+    }
+
+    .header-content > nav {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom:25px
+    }
+
+    .sponsorlist {
+        flex-direction:column
+    }
+
+    .platinum-sponsors .sponsor-logo-outer {
+        height:140px
+    }
+
+    .gold-sponsors .sponsor-logo-outer {
+        height:140px
+    }
+
+    .silver-sponsors .sponsor-logo-outer {
+        height:130px
+    }
+
+    .bronze-sponsors .sponsor-logo-outer {
+        height:120px
+    }
+
+    .equipment-sponsors .sponsor-logo-outer {
+        height:110px
+    }
+
+    .sponsor-grenade .sponsor-logo-inner {
+        max-width: 380px
+    }
+
+    .sponsor-crye .sponsor-logo-inner {
+        max-width: 430px
+    }
+    
+    .sponsor-chelseagroup .sponsor-logo-inner {
+        max-width: 180px
+    }
+
+    .sponsor-spectragroup .sponsor-logo-inner {
+        max-width:300px
+    }
+
+    .sponsor-hexegic .sponsor-logo-inner {
+        max-width:300px
+    }
+
+    .sponsor-valbruna .sponsor-logo-inner {
+        max-width:350px
+    }
+
+    .sponsor-drystone .sponsor-logo-inner {
+        max-width:290px
+    }
+
+    .sponsor-prometheus .sponsor-logo-inner {
+        max-width:200px
+    }
+
+    .sponsor-velador .sponsor-logo-inner {
+        max-width:130px
+    }
+
+    .sponsor-rowell .sponsor-logo-inner {
+        max-width:200px
+    }
+
+    .sponsor-silverback .sponsor-logo-inner {
+        max-width:180px
+    }
+
+    .sponsor-dakin .sponsor-logo-inner {
+        max-width:230px
+    }
+
+    .sponsor-inspire .sponsor-logo-inner {
+        max-width:230px
+    }
+
+    .sponsor-harwin .sponsor-logo-inner {
+        max-width:210px
+    }
+
+    .sponsor-elliotbrown .sponsor-logo-inner {
+        max-width:210px
+    }
+
+    .sponsor-clearstorage .sponsor-logo-inner {
+        max-width:230px
+    }
+
+    .sponsor-ct .sponsor-logo-inner {
+        max-width:250px
+    }
+
+    .sponsor-kinetic6 .sponsor-logo-inner {
+        max-width:190px
+    }
+
+    .sponsor-serbus .sponsor-logo-inner {
+        max-width:200px
+    }
+
+    .sponsor-carnegie .sponsor-logo-inner {
+        max-width:220px
+    }
+
+    .sponsor-halo .sponsor-logo-inner {
+        max-width:120px
+    }
+
+    .sponsor-levelpeaks .sponsor-logo-inner {
+        max-width:120px
+    }
+
+    .sponsor-511 .sponsor-logo-inner {
+        max-width: 120px
+    }
+
+    .sponsor-rustic .sponsor-logo-inner {
+        max-width: 80px
+    }
+
+    .sponsor {
+        margin-bottom:20px
+    }
+
+
+    .tracker {
+        height: 350px;
+    }
+
+    #twitter-widget-0 {
+        max-height: 350px;
+    }
+
+    .twitter-widget {
+        padding-top: 30px;
+    }
+
+}
+
+/*! Tablet only */
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .text-content > p {
+        font-size: 1.3em;
+        line-height:1.5;
+    }
+
+    .twobox-image {
+        min-height:470px
+    }
+
+    .twobox-text-lower, .twobox-text-upper {
+        padding:70px 20px 60px 20px
+    }
+
+    .header-content > nav {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display:flex
+    }
+
+    .platinum-sponsors .sponsor-logo-outer {
+        height:200px
+    }
+
+    .gold-sponsors .sponsor-logo-outer {
+        height:180px
+    }
+
+    .silver-sponsors .sponsor-logo-outer {
+        height:140px
+    }
+
+    .bronze-sponsors .sponsor-logo-outer {
+        height:130px
+    }
+
+    .equipment-sponsors .sponsor-logo-outer {
+        height:100px
+    }
+
+    .sponsor-grenade .sponsor-logo-inner {
+        max-width: 250px
+    }
+
+    .sponsor-crye .sponsor-logo-inner {
+        max-width: 250px
+    }
+
+    .sponsor-chelseagroup .sponsor-logo-inner {
+        max-width: 200px
+    }
+
+    .sponsor-spectragroup .sponsor-logo-inner {
+        max-width: 250px
+    }
+
+    .sponsor-hexegic .sponsor-logo-inner {
+        max-width: 250px
+    }
+
+    .sponsor-valbruna .sponsor-logo-inner {
+        max-width: 230px;
+    }
+
+    .sponsor-drystone .sponsor-logo-inner {
+        max-width:290px
+    }
+
+    .sponsor-prometheus .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-velador .sponsor-logo-inner {
+        max-width:110px
+    }
+
+    .sponsor-silverback .sponsor-logo-inner {
+        max-width:130px
+    }
+
+    .sponsor-dakin .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-harwin .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-rowell .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-ct .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-inspire .sponsor-logo-inner {
+        max-width:140px;
+    }
+
+    .sponsor-elliotbrown .sponsor-logo-inner {
+        max-width:140px;
+    }
+
+    .sponsor-clearstorage .sponsor-logo-inner {
+        max-width:145px;
+    }
+
+    .sponsor-kinetic6 .sponsor-logo-inner {
+        max-width:110px
+    }
+
+    .sponsor-serbus .sponsor-logo-inner {
+        max-width:120px
+    }
+
+    .sponsor-carnegie .sponsor-logo-inner {
+        max-width:130px
+    }
+
+    .sponsor-511 .sponsor-logo-inner {
+        max-width: 90px
+    }
+
+    .sponsor-rustic .sponsor-logo-inner {
+        max-width: 80px
+    }
+
+    .sponsor-halo .sponsor-logo-inner {
+        max-width: 85px
+    }
+
+    .sponsor-levelpeaks .sponsor-logo-inner {
+        max-width: 85px
+    }
+
+    .tracker {
+        height: 400px;
+    }
+
+
+    #twitter-widget-0 {
+        max-height: 400px;
+    }
+
+    .twitter-widget {
+        padding-top: 35px;
+    }
+}
+
+/*! Tablet and mobile */
+@media only screen and (max-width: 1000px) {
+    .header-content {
+        padding-top: 20px;
+        padding-bottom:40px
+    }
+
+    .header-content > nav > a {
+        padding:10px
+    }
+
+    .twobox-upper {
+        flex-direction:column-reverse
+    }
+
+    .twobox-lower {
+        flex-direction:column
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align:center
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding: 20px 10px 10px 10px;
+        justify-content: space-around;
+        align-items:center
+    }
+
+    .social-links, .contact {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom:10px
+    }
+
+    .social-logos {
+        justify-content:center
+    }
+
+    .widgetbox {
+        flex-direction: column;
+    }
+
+    .widgetbox-left {
+        flex: 1;
+    }
+
+    .widgetbox-right {
+        flex: 1;
+    }
+}
+
+/*! Computer only */
+@media only screen and (min-width: 1001px) {
+
+    h2 {
+        font-size: 2.6em;
+    }
+    
+    .text-content > p {
+        font-size: 1.4em;
+        line-height:1.6;
+    }
+
+    .twobox-image {
+        min-height:580px
+    }
+
+    .header-content > nav > a {
+        display: inline-block;
+        margin-left:20px
+    }
+
+    .header-content > nav {
+        margin-left: auto;
+        margin-right:28px
+    }
+
+    .twobox-text-lower, .twobox-text-upper {
+        max-width:550px
+    }
+
+    .twobox-text-lower {
+        margin-right: 40px;
+        margin-left: auto;
+        padding-left:20px
+    }
+
+    .twobox-text-upper {
+        margin-left: 40px;
+        margin-right: auto;
+        padding-right:20px
+    }
+
+    .header-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 28px;
+        padding-bottom: 38px;
+        justify-content: space-between;
+        align-items:center
+    }
+
+    .footer-content {
+        justify-content:space-between
+    }
+
+    .platinum-sponsors .sponsor-logo-outer {
+        height:250px
+    }
+
+    .gold-sponsors .sponsor-logo-outer {
+        height:220px
+    }
+
+    .silver-sponsors .sponsor-logo-outer {
+        height:180px
+    }
+
+    .bronze-sponsors .sponsor-logo-outer {
+        height: 160px
+    }
+
+    .equipment-sponsors .sponsor-logo-outer {
+        height: 140px
+    }
+
+    .sponsor-grenade .sponsor-logo-inner {
+        max-width: 300px
+    }
+
+    .sponsor-crye .sponsor-logo-inner {
+        max-width: 310px
+    }
+
+    .sponsor-chelseagroup .sponsor-logo-inner {
+        max-width: 220px
+    }
+
+    .sponsor-spectragroup .sponsor-logo-inner {
+        max-width:300px
+    }
+
+    .sponsor-valbruna .sponsor-logo-inner {
+        max-width: 300px
+    }
+
+    .sponsor-hexegic .sponsor-logo-inner {
+        max-width:300px
+    }
+
+    .sponsor-drystone .sponsor-logo-inner {
+        max-width:380px
+    }
+
+    .sponsor-prometheus .sponsor-logo-inner {
+        max-width: 190px
+    }
+
+    .sponsor-velador .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-silverback .sponsor-logo-inner {
+        max-width:180px
+    }
+
+    .sponsor-dakin .sponsor-logo-inner {
+        max-width: 200px
+    }
+
+    .sponsor-harwin .sponsor-logo-inner {
+        max-width: 190px
+    }
+
+    .sponsor-inspire .sponsor-logo-inner {
+        max-width: 180px
+    }
+
+    .sponsor-elliotbrown .sponsor-logo-inner {
+        max-width:200px
+    }
+
+    .sponsor-rowell .sponsor-logo-inner {
+        max-width: 190px
+    }
+
+    .sponsor-ct .sponsor-logo-inner {
+        max-width: 190px
+    }
+
+    .sponsor-clearstorage .sponsor-logo-inner {
+        max-width:205px
+    }
+
+    .sponsor-kinetic6 .sponsor-logo-inner {
+        max-width:140px
+    }
+
+    .sponsor-serbus .sponsor-logo-inner {
+        max-width:160px
+    }
+
+    .sponsor-carnegie .sponsor-logo-inner {
+        max-width:180px;
+    }
+
+    .sponsor-halo .sponsor-logo-inner {
+        max-width: 100px
+    }
+
+    .sponsor-511 .sponsor-logo-inner {
+        max-width: 110px
+    }
+
+    .sponsor-rustic .sponsor-logo-inner {
+        max-width: 95px
+    }
+
+    .sponsor-levelpeaks .sponsor-logo-inner {
+        max-width: 100px
+    }
+
+    .social-logos {
+        justify-content:flex-start
+    }
+
+    .social-links p {
+        margin-left:5px
+    }
+
+    .widgetbox {
+        flex-direction: row;
+    }
+
+    .widget-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .widgetbox-left {
+        flex: 2;
+    }
+
+    .widgetbox-right {
+        flex: 1;
+    }
+
+    .tracker {
+        height: 600px;
+    }
+
+
+    .twitter-widget {
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 701px) {
+    .logocell {
+        background-color: white;
+        width: 300px;
+        height: 190px;
+        margin: 28px 22px;
+        align-items: center;
+        box-shadow:10px 10px 16px 0 rgba(0, 0, 0, 0.02)
+    }
+
+    .logobox {
+        background-color: #F4F4F4;
+        border-width: 1px;
+        margin-left: auto;
+        margin-right:auto
+    }
+
+    .onebox-text {
+        padding:70px 20px 40px 20px
+    }
+
+    .onebox-widgets {
+        padding:0px 20px 80px 20px
+    }
+
+    .footer-content {
+        padding:60px 20px 60px 20px
+    }
+
+    .sponsorlist {
+        flex-direction:row
+    }
+
+
+}
+
+h2 {
+    color: #191e3e;
+    font-family: 'Catamaran Medium', sans-serif;
+    margin-bottom: 28px;
+    margin-top: 0;
+}
+
+
+iframe {
+    border-width: 0;
+}
+
+
+
+.widgetbox {
+    display: flex;
+}
+
+
+
+.img-ian {
+    background-image:url(ian.jpg)
+}
+
+.img-map {
+    background-image:url(map.png)
+}
+
+.twobox-image {
+    background-size: cover;
+    background-position:center
+}
+
+footer {
+    background-color: #F4F4F4;
+    font-size:1.2em
+}
+
+.footer-content {
+    display:flex
+}
+
+.social-links p {
+    margin-top: 0;
+    margin-bottom:10px
+}
+
+.social-logos img {
+    width: auto;
+    margin-left: 5px;
+    margin-right:5px
+}
+
+.facebook-logo {
+    height:40px
+}
+
+.twitter-logo {
+    height:40px
+}
+
+.youtube-logo {
+    height:46px
+}
+
+.instagram-logo {
+    height:42px
+}
+
+.social-logos {
+    display: flex;
+    width: 250px;
+    align-items:center
+}
+
+.contact > a {
+    color: black;
+    text-decoration: underline;
+    overflow-wrap:anywhere
+}
+
+h3 {
+    color: #191e3e;
+    font-family: 'Catamaran Medium', sans-serif;
+    font-size:1.6em
+}
+
+.sponsor-logo-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F7F7F7;
+    box-shadow:10px 10px 16px 0 rgba(0, 0, 0, 0.05)
+}
+
+.sponsor-logo-inner img {
+    height: auto;
+    width:100%
+}
+
+.platinum-sponsors .sponsor-logo-inner {
+    padding-left: 40px;
+    padding-right:40px
+}
+
+.gold-sponsors .sponsor-logo-inner {
+    padding-left: 40px;
+    padding-right:40px
+}
+
+.silver-sponsors .sponsor-logo-inner {
+    padding-left: 40px;
+    padding-right:40px
+}
+
+.bronze-sponsors .sponsor-logo-inner {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.equipment-sponsors .sponsor-logo-inner {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.sponsorlist {
+    display:flex
+}
+
+.sponsor {
+    flex: 1
+}
+
